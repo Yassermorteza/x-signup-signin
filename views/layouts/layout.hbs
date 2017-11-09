@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+   <div>
+   	<ul>
+	{{#if sucMsg}}
+	      <li>{{sucMsg}}</li>
+	{{/if}}
+	</ul>
+	<ul>
+	{{#if errMsg}}
+	     <li>{{errMsg}}</li>
+	{{/if}}
+	</ul>
+	<ul>
+	{{#if error}}
+	    <li>{{error}}</li>
+	{{/if}}
+	</ul>
+	{{{body}}}
+   </div>
+</body>
+</html>
